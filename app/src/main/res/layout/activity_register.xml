@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register"
+    android:background="@drawable/tralalelo">
+
+
+
+    <!-- Tombol Back -->
+    <ImageView
+        android:id="@+id/tombol_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_back"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        />
+
+    <!-- Judul Register -->
+    <TextView
+        android:id="@+id/textreg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="REGISTER"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:layout_marginTop="13dp"/>
+
+    <!-- Form Input -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/textreg"
+        android:layout_marginTop="20dp"
+        android:padding="30dp"
+        android:id="@+id/ly1">
+
+
+        <EditText
+            android:id="@+id/nama_user2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_shape"
+            android:hint="Create Name"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#B3000000"
+            android:padding="12dp"
+            android:paddingLeft="10dp"
+           />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/button_shape"
+            android:hint="Create Password"
+            android:textColorHint="#B3000000"
+            android:textColor="#000000"
+            android:padding="12dp"
+            android:paddingLeft="10dp"
+            android:id="@+id/pass_user1"
+            android:inputType="textPassword"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/button_shape"
+            android:hint="Confirm Password"
+            android:textColorHint="#B3000000"
+            android:textColor="#FFFFFF"
+            android:padding="12dp"
+            android:paddingLeft="10dp"
+            android:id="@+id/pass_user2"
+            android:inputType="textPassword">
+        </EditText>
+    </LinearLayout>
+
+    <!-- Tombol Register -->
+    <Button
+        android:id="@+id/tombol_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ly1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="275dp"
+        android:width="350dp"
+        android:backgroundTint="#FFEB3B"
+        android:text="Register"
+        android:textColor="@color/black"/>
+
+    <!-- Punya akun? Link ke login -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tombol_register"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sudah punya akun?"
+            android:textColor="@color/white"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/gologin1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:text=" Login"
+            android:textColor="@color/blue"
+            android:textColorLink="@color/white"
+            android:textSize="12dp"
+
+            >
+
+        </TextView>
+
+    </LinearLayout>
+
+</RelativeLayout>
